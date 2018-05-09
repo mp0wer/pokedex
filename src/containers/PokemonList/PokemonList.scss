@@ -1,0 +1,12 @@
+.pokemon-list {
+  margin-bottom: 1em;
+
+  &__not-found {
+    text-align: center;
+    padding: 1em;
+  }
+
+  &__header {
+    font-weight: bold;
+  }
+}

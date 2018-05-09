@@ -1,0 +1,23 @@
+.error-handler {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  text-align: center;
+  background-color: indianred;
+  color: white;
+  &.error-handler-enter {
+    top: -100%;
+    &.error-handler-enter-active {
+      top: 0;
+      transition: top 2s ease-in;
+    }
+  }
+  &.error-handler-leave {
+    &.error-handler-leave-active {
+      top: -100%;
+      transition: top 2s ease-out;
+    }
+  }
+}

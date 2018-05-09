@@ -1,0 +1,40 @@
+.pagination-container {
+  margin-bottom: 1em;
+  &__divider {
+    height: 1em;
+  }
+
+  .pagination-container input {
+    margin-bottom: 0;
+    width: 60px;
+  }
+
+  .pagination {
+    margin-bottom: 0;
+  }
+
+  .pagination li {
+    display: inline-block;
+  }
+
+  .button-group {
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .pagination-next button:after {
+    display: inline-block;
+    margin-left: 0.5rem;
+    content: '\BB';
+  }
+
+  .pagination-previous button:before {
+    display: inline-block;
+    margin-right: 0.5rem;
+    content: '\AB';
+  }
+}

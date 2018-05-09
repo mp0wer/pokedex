@@ -1,0 +1,27 @@
+.pokemon-card {
+  position: relative;
+  border-top: 1px solid gray;
+  padding: 10px 0;
+
+  &__container {
+    transition: .5s filter ease-out;
+  }
+
+  &__container--loading {
+    filter: blur(5px);
+  }
+
+  &__avatar {
+    background-position: center;
+    background-size: cover;
+    &:before {
+      content: '';
+      padding-top: 100%;
+      display: inline-block;
+    }
+  }
+
+  &__details {
+    text-transform: capitalize;
+  }
+}
